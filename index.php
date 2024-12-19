@@ -1,5 +1,6 @@
 <?php
 require 'session.php';
+require 'koneksi.php';
 
 $produk = mysqli_query($koneksi, "SELECT id, nama_produk, harga, foto, detail FROM produk LIMIT 6");
 ?>
@@ -96,7 +97,7 @@ $produk = mysqli_query($koneksi, "SELECT id, nama_produk, harga, foto, detail FR
             </p>
         </div>
     </div>
-                    
+
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
 </body>
